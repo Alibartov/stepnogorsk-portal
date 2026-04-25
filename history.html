@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>История Степногорска</title>
+    <style>
+        :root { --accent: #f39c12; --bg: #121212; --card-bg: #1e1e1e; --text: #d1d1d1; }
+        body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', sans-serif; margin: 0; line-height: 1.6; }
+        
+        .header { background: #1f1f1f; padding: 20px; border-bottom: 3px solid var(--accent); display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+        .back-btn { color: var(--accent); text-decoration: none; font-weight: bold; text-transform: uppercase; border: 1px solid var(--accent); padding: 8px 15px; border-radius: 4px; transition: 0.3s; }
+        .back-btn:hover { background: var(--accent); color: #000; }
+
+        .container { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
+        
+        .intro { text-align: center; margin-bottom: 50px; }
+        .intro h1 { color: var(--accent); text-transform: uppercase; margin-bottom: 10px; font-size: 2.2em; }
+        .intro p { color: #999; font-size: 1.1em; max-width: 700px; margin: 0 auto; }
+
+        /* Вертикальный таймлайн */
+        .timeline { position: relative; padding: 20px 0; }
+        .timeline::after { content: ''; position: absolute; width: 4px; background: #333; top: 0; bottom: 0; left: 24px; border-radius: 2px; }
+
+        .event { position: relative; padding-left: 70px; margin-bottom: 40px; width: 100%; box-sizing: border-box; }
+        
+        /* Точка на линии */
+        .event::before { content: ''; position: absolute; width: 18px; height: 18px; left: 17px; top: 25px; background: var(--bg); border: 4px solid var(--accent); border-radius: 50%; z-index: 2; box-shadow: 0 0 12px rgba(243, 156, 18, 0.6); }
+
+        .content { background: var(--card-bg); padding: 25px 30px; border-radius: 10px; border-left: 5px solid var(--accent); transition: transform 0.3s, box-shadow 0.3s; }
+        .content:hover { transform: translateX(10px); box-shadow: 0 8px 20px rgba(0,0,0,0.6); border-left-color: #fff; }
+        
+        .date { display: inline-block; color: #fff; background: var(--accent); font-weight: bold; font-size: 1.1em; margin-bottom: 15px; padding: 5px 15px; border-radius: 5px; text-transform: uppercase; letter-spacing: 1px; }
+        .content h3 { margin: 0 0 10px 0; color: #fff; font-size: 1.3em; }
+        .content p { margin: 0; color: #bdc3c7; font-size: 0.95em; line-height: 1.6; text-align: justify; }
+        
+        .highlight { color: var(--accent); font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h2 style="margin:0;">Летопись Степногорска</h2>
+        <a href="index.html" class="back-btn">На главную</a>
+    </div>
+
+    <div class="container">
+        <div class="intro">
+            <h1>Хронология строительства и развития</h1>
+            <p>От первых колышков в степи до возведения знаковых общественных зданий, торговых центров и современной инфраструктуры.</p>
+        </div>
+
+        <div class="timeline">
+            
+            <div class="event">
+                <div class="content">
+                    <span class="date">17 мая 1956 г.</span>
+                    <h3>Приказ №356. Начало</h3>
+                    <p>Издан приказ Министерства среднего машиностроения СССР об организации дирекции по строительству Целинного горно-химического комбината (ЦГХК). Спустя неделю, 25 мая, в регион прибывает первый директор <span class="highlight">С. А. Смирнов</span>.</p>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="content">
+                    <span class="date">1958 г.</span>
+                    <h3>Выбор площадки под город</h3>
+                    <p>Приезд министра Е. П. Славского для утверждения места под будущий город. Принято историческое архитектурное решение: <span class="highlight">сохранить природные лесопосадки</span> и гармонично вписать в них будущие жилые микрорайоны.</p>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="content">
+                    <span class="date">Март 1959 г.</span>
+                    <h3>Первые колышки</h3>
+                    <p>В голой степи вбиты первые колышки на месте будущей улицы Парковой. Начинается разметка первого микрорайона. Рабочие и инженеры пока живут во временных бараках.</p>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="content">
+                    <span class="date">1960 г. – 1961 г.</span>
+                    <h3>Первый дом и водовод</h3>
+                    <p>Заложен фундамент первого 16-квартирного капитального дома. Параллельно начинается возведение важнейшей артерии — заливаются первые кубометры бетона в основание Селетинского водохранилища.</p>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="content">
+                    <span class="date">6 апреля 1964 г.</span>
+                    <h3>Статус города (Целиноград-25)</h3>
+                    <p>Указом Президиума Верховного Совета Казахской ССР поселок получает статус города областного подчинения. В этом же году открывает двери <span class="highlight">Средняя школа №1</span>.</p>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="content">
+                    <span class="date">1966 г.</span>
+                    <h3>Заселение 2-го микрорайона и ТЭЦ</h3>
+                    <p>Молодые семьи строителей начинают массово получать квартиры в первых домах 2-го микрорайона. Открывается Средняя школа №2. Вводится в строй первая очередь городской ТЭЦ и ремонтно-механический завод (РМЗ).</p>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="content">
+                    <span class="date">1968 г. – 1970 г.</span>
+                    <h3>Профессиональное образование</h3>
+                    <p>Открывается Горнотехнический колледж (ГТК) для подготовки кадров для ЦГХК. В 1970 году свои двери открывает Высший колледж Степногорска (ВКС). Город становится центром притяжения молодежи.</p>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="content">
+                    <span class="date">1972 г.</span>
+                    <h3>Гостиница «Степногорск»</h3>
+                    <p>Вводится в эксплуатацию главная гостиница города. Здание становится визитной карточкой центральной площади и ярким примером советского архитектурного модернизма 70-х годов.</p>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="content">
+                    <span class="date">23 февраля 1975 г.</span>
+                    <h3>ТЦ «Казахстан» и коммерция</h3>
+                    <p>Торжественное открытие центрального торгового комплекса ТЦ «Казахстан», объединившего в себе множество магазинов и ставшего главным торговым узлом для растущего населения.</p>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="content">
+                    <span class="date">1978 г.</span>
+                    <h3>Запуск ДК и транспорта</h3>
+                    <p>Формируется Степногорское пассажирское автотранспортное предприятие (ПАТП). В это же время на полную мощность разворачивается творческая работа в <span class="highlight">Дворце Культуры ЦГХК</span>, объединившем десятки коллективов.</p>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="content">
+                    <span class="date">1984 г.</span>
+                    <h3>Новая 7-этажная больница</h3>
+                    <p>Завершено строительство современного 7-этажного комплекса городской больницы. Доктор К. К. Махатов открывает первое в городе специализированное травматологическое отделение.</p>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="content">
+                    <span class="date">1989 г.</span>
+                    <h3>Завод горного оборудования (ЗГО)</h3>
+                    <p>Под руководством В. И. Зингера запущен ЗГО. Вскоре, в сложные 90-е годы, завод сумел выжить, самостоятельно находя заказчиков и выпуская не только горные машины, но и мельницы для зерна.</p>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="content">
+                    <span class="date">1991 г. – 1990-е</span>
+                    <h3>Снятие секретности и новые ТЦ</h3>
+                    <p>Город открывается миру. Начинается эпоха рыночной экономики. Активно развивается частная коммерческая архитектура, появляются новые торговые узлы, такие как <span class="highlight">ТЦ «Сибирь»</span> и <span class="highlight">ТЦ «Армонд»</span>, ставшие центрами притяжения в микрорайонах.</p>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="content">
+                    <span class="date">Апрель 1999 г.</span>
+                    <h3>Новые производства</h3>
+                    <p>Благодаря инвестициям в городе заработал новый современный молочный завод, производящий продукцию по голландским технологиям.</p>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="content">
+                    <span class="date">16 октября 1999 г.</span>
+                    <h3>Мемориал воинам-афганцам</h3>
+                    <p>В парковой зоне открыт памятник воинам-интернационалистам, ставший важным местом памяти и дополнивший архитектурно-парковый ансамбль города.</p>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="content">
+                    <span class="date">2014 г.</span>
+                    <h3>Городской Флагшток</h3>
+                    <p>К 50-летию города на центральной площади возведено монументальное сооружение — 30-метровый флагшток, который стал новым визуальным символом и местом проведения главных городских торжеств.</p>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="content">
+                    <span class="date">2017 г. – 2019 г.</span>
+                    <h3>Социальные объекты</h3>
+                    <p>В городе открыт «Центр активного долголетия» для пенсионеров. В 2019 году при активном участии общественности запущен современный Центр гемодиализа.</p>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="content">
+                    <span class="date">7 декабря 2023 г.</span>
+                    <h3>Испытание холодом</h3>
+                    <p>Крупная коммунальная авария: часть домов осталась без отопления и воды в 30-градусный мороз. Дата вошла в историю как пример невероятной сплоченности горожан, предпринимателей и служб, оперативно устранивших последствия ЧС.</p>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="content">
+                    <span class="date">2024 г.</span>
+                    <h3>60-летний Юбилей</h3>
+                    <p>Степногорск отмечает свое 60-летие, продолжая развиваться как важнейший промышленный, коммерческий и социальный узел Акмолинской области.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

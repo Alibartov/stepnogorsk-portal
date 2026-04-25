@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Культурное наследие и Памятники Степногорска</title>
+    <style>
+        :root { --accent: #e74c3c; --bg: #0f0f0f; --card-bg: #1a1a1a; --text: #ececec; }
+        body { background: var(--bg); color: var(--text); font-family: 'Verdana', sans-serif; margin: 0; line-height: 1.7; }
+        
+        .header { background: #1a1a1a; padding: 30px 5%; border-bottom: 3px solid var(--accent); display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+        .back-btn { color: var(--accent); text-decoration: none; border: 1px solid var(--accent); padding: 10px 25px; border-radius: 5px; font-weight: bold; transition: 0.3s; }
+        .back-btn:hover { background: var(--accent); color: #fff; }
+
+        .container { max-width: 1000px; margin: 50px auto; padding: 0 20px; }
+        
+        .culture-card { background: var(--card-bg); border-radius: 15px; padding: 40px; margin-bottom: 60px; border-top: 5px solid var(--accent); box-shadow: 0 15px 35px rgba(0,0,0,0.7); }
+        h2 { font-size: 2.2em; color: var(--accent); margin-top: 0; text-transform: uppercase; border-bottom: 1px solid #333; padding-bottom: 15px; }
+        
+        .photo-wrapper { 
+            width: 100%; 
+            height: 500px; 
+            background: #000; 
+            border-radius: 10px; 
+            margin-bottom: 25px; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            overflow: hidden;
+            border: 1px solid #333;
+        }
+        .main-pic { max-width: 100%; max-height: 100%; object-fit: contain; }
+        
+        .text-block { font-size: 1.1em; text-align: justify; margin-bottom: 20px; color: #d1d1d1; }
+        .date-badge { color: var(--accent); font-weight: bold; border: 1px solid var(--accent); padding: 2px 10px; border-radius: 4px; font-size: 0.9em; margin-bottom: 10px; display: inline-block; }
+        
+        .inner-gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-top: 25px; }
+        .inner-gallery img { width: 100%; height: 200px; object-fit: cover; border-radius: 8px; transition: 0.3s; border: 1px solid #333; }
+
+        .badge { display: inline-block; background: var(--accent); color: #fff; padding: 5px 15px; border-radius: 4px; font-weight: bold; margin-bottom: 15px; font-size: 0.9em; }
+
+        @media (max-width: 768px) {
+            .inner-gallery { grid-template-columns: 1fr; }
+            .photo-wrapper { height: 350px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>КУЛЬТУРА И ПАМЯТНИКИ</h1>
+        <a href="index.html" class="back-btn">← НА ГЛАВНУЮ</a>
+    </div>
+
+    <div class="container">
+
+        <section class="culture-card">
+            <span class="badge">ГЛАВНЫЙ ОБЪЕКТ</span>
+            <h2>ДК «Горняк»</h2>
+            <span class="date-badge">Открыт: 1970 год</span>
+            <div class="photo-wrapper">
+                <img src="dk_main.jpg" class="main-pic" alt="ДК Горняк">
+            </div>
+            <div class="text-block">
+                <p>Построенный к 100-летию В.И. Ленина в 1970 году, Дворец Культуры стал архитектурным подарком молодым строителям и горнякам города. Это образец торжественного советского стиля, призванный показать мощь и культурный уровень нового промышленного центра.</p>
+            </div>
+            <div class="inner-gallery">
+                <img src="dk_vnutri_1.jpg" alt="Фойе">
+                <img src="dk_vnutri_2.jpg" alt="Зал">
+                <img src="dk_vnutri_3.jpg" alt="Люстры">
+            </div>
+        </section>
+
+        <section class="culture-card">
+            <span class="badge">ЕДИНСТВО</span>
+            <h2>Дом Дружбы</h2>
+            <span class="date-badge">Культурный центр</span>
+            <div class="photo-wrapper">
+                <img src="dom_druzhby.jpg" class="main-pic" alt="Дом Дружбы">
+            </div>
+            <div class="text-block">
+                <p>Важнейшая площадка для укрепления межэтнического согласия в Степногорске. Здесь располагаются этнокультурные объединения, проводятся праздники народов Казахстана, фестивали и выставки, способствующие сохранению духовных традиций и языков всех жителей города.</p>
+            </div>
+        </section>
+
+        <section class="culture-card">
+            <span class="badge">СПОРТ</span>
+            <h2>Стадион «Аксу»</h2>
+            <span class="date-badge">Главная арена</span>
+            <div class="photo-wrapper">
+                <img src="stadium_aksu.jpg" class="main-pic" alt="Стадион Аксу">
+            </div>
+            <div class="text-block">
+                <p>Главное спортивное сооружение Степногорска. Стадион является центром притяжения для любителей футбола и легкой атлетики. На его базе проходят городские спартакиады, матчи и тренировки, воспитывающие будущих чемпионов.</p>
+            </div>
+        </section>
+
+        <section class="culture-card">
+            <span class="badge">СИМВОЛ ГОРОДА</span>
+            <h2>Скульптурная композиция «Легенда степей»</h2>
+            <span class="date-badge">Установлен: 1980-е гг.</span>
+            <div class="photo-wrapper">
+                <img src="legend_steppes.jpg" class="main-pic" alt="Легенда степей">
+            </div>
+            <div class="text-block">
+                <p>Появившаяся в период расцвета города, эта скульптура стала воплощением романтики степного края. Она была призвана смягчить строгий индустриальный облик Степногорска, добавив ему изящества и мифологической глубины.</p>
+            </div>
+        </section>
+
+        <section class="culture-card">
+            <span class="badge">КУЛЬТУРНЫЙ КОД</span>
+            <h2>Памятник Абаю Кунанбаеву</h2>
+            <span class="date-badge">Установлен: 2010 год</span>
+            <div class="photo-wrapper">
+                <img src="monument_abay.jpg" class="main-pic" alt="Памятник Абаю">
+            </div>
+            <div class="text-block">
+                <p>Бюст великого мыслителя был торжественно открыт в рамках празднования Дня города. Установка памятника Абаю стала важным шагом в укреплении национального самосознания и духовного развития жителей Степногорска.</p>
+            </div>
+        </section>
+
+        <section class="culture-card">
+            <span class="badge">НАУКА И НЕДРА</span>
+            <h2>Памятник Канышу Сатпаеву</h2>
+            <span class="date-badge">Установлен: 2000-е гг.</span>
+            <div class="photo-wrapper">
+                <img src="monument_satpaev.jpg" class="main-pic" alt="Памятник Сатпаеву">
+            </div>
+            <div class="text-block">
+                <p>Монумент в честь отца-основателя казахстанской геологии появился в центре города как символ благодарности человека труда науке. Без изысканий Сатпаева не было бы Степногорска.</p>
+            </div>
+        </section>
+
+        <section class="culture-card">
+            <span class="badge">ИСТОРИЧЕСКАЯ МЫСЛЬ</span>
+            <h2>Памятник Льву Гумилеву</h2>
+            <span class="date-badge">Установлен: 2000-е гг.</span>
+            <div class="photo-wrapper">
+                <img src="monument_gumilev.jpg" class="main-pic" alt="Памятник Гумилеву">
+            </div>
+            <div class="text-block">
+                <p>Установлен в знак уважения к евразийским идеям мыслителя. Гумилев подчеркивал уникальность степной цивилизации, что находит особый отклик в истории Степногорска.</p>
+            </div>
+        </section>
+
+        <section class="culture-card">
+            <span class="badge">ЛЕГЕНДА СПОРТА</span>
+            <h2>Памятник борцу Кажымукану Мунайтпасову</h2>
+            <span class="date-badge">Установлен: 2010-е гг.</span>
+            <div class="photo-wrapper">
+                <img src="monument_kazhymukan.jpg" class="main-pic" alt="Памятник Кажымукану">
+            </div>
+            <div class="text-block">
+                <p>Монумент был возведен к годовщине великого борца. Место для памятника выбрано не случайно — он стоит на пути к спортивным объектам города, напоминая молодежи о силе духа.</p>
+            </div>
+        </section>
+
+        <section class="culture-card">
+            <span class="badge">ВОИНСКАЯ СЛАВА</span>
+            <h2>Памятник воинам-афганцам</h2>
+            <span class="date-badge">Установлен: 1990-е гг.</span>
+            <div class="photo-wrapper">
+                <img src="monument_afghan.jpg" class="main-pic" alt="Памятник воинам-афганцам">
+            </div>
+            <div class="text-block">
+                <p>Был открыт по инициативе союза ветеранов Афганистана города Степногорска. Памятник стал одним из первых мемориалов в регионе, посвященных этой войне.</p>
+            </div>
+        </section>
+
+        <section class="culture-card">
+            <span class="badge">ВЕЛИКИЙ ПОДВИГ</span>
+            <h2>Монумент Великой Отечественной войны</h2>
+            <span class="date-badge">Установлен: 1985 год</span>
+            <div class="photo-wrapper">
+                <img src="monument_vov.jpg" class="main-pic" alt="Памятник ВОВ">
+            </div>
+            <div class="text-block">
+                <p>Открыт к 40-летию Великой Победы. Обелиск Славы является центральным местом проведения парадов. Это мемориальное пространство проектировалось как главная точка памяти.</p>
+            </div>
+        </section>
+
+        <section class="culture-card">
+            <span class="badge">ГЕРОИ ТРУДА</span>
+            <h2>Памятник Шахтерам Степногорска</h2>
+            <span class="date-badge">Установлен: 1980-е гг.</span>
+            <div class="photo-wrapper">
+                <img src="monument_miners.jpg" class="main-pic" alt="Памятник Шахтерам">
+            </div>
+            <div class="text-block">
+                <p>Установлен в советское время как дань уважения основной профессии города. Символизирует мощь горно-химического комбината и героизм людей, работающих под землей.</p>
+            </div>
+        </section>
+
+        <section class="culture-card">
+            <span class="badge">ПАМЯТЬ СЕРДЦА</span>
+            <h2>Памятник жертвам политических репрессий</h2>
+            <span class="date-badge">Установлен: 2000-е гг.</span>
+            <div class="photo-wrapper">
+                <img src="repressions_memorial.jpg" class="main-pic" alt="Жертвам репрессий">
+            </div>
+            <div class="text-block">
+                <p>Построен в годы независимости Казахстана как символ восстановления исторической справедливости. Это место напоминает о трагических судьбах тысяч людей.</p>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>

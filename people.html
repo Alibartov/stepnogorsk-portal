@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Земляки | Степногорск</title>
+    <style>
+        :root { --accent: #f39c12; --bg: #121212; --card-bg: #1e1e1e; --text: #d1d1d1; }
+        body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', sans-serif; margin: 0; line-height: 1.6; }
+        .header { background: #1f1f1f; padding: 20px; border-bottom: 3px solid var(--accent); display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+        .back-btn { color: var(--accent); text-decoration: none; font-weight: bold; text-transform: uppercase; border: 1px solid var(--accent); padding: 8px 15px; border-radius: 4px; transition: 0.3s; }
+        .back-btn:hover { background: var(--accent); color: #000; }
+        .container { max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+        h2 { color: var(--accent); text-transform: uppercase; margin: 40px 0 20px 0; border-left: 5px solid var(--accent); padding-left: 15px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .card { background: var(--card-bg); border-radius: 12px; border: 1px solid #333; overflow: hidden; display: flex; flex-direction: column; transition: 0.3s; height: 100%; }
+        .card:hover { border-color: var(--accent); transform: translateY(-5px); }
+        
+        .photo-box { width: 100%; height: 250px; background: #1a1a1a; overflow: hidden; border-bottom: 1px solid #333; position: relative; display: flex; align-items: center; justify-content: center; text-align: center; }
+        
+        /* Изменено: фотографии теперь «отдалены» и не обрезаются */
+        .photo-box img { 
+            max-width: 100%; 
+            max-height: 100%; 
+            object-fit: contain; 
+            padding: 10px; /* Эффект отдаления за счет внутреннего отступа */
+        }
+        
+        .no-photo { color: #555; font-size: 0.9em; font-weight: bold; text-transform: uppercase; padding: 20px; }
+
+        .year-badge { position: absolute; top: 10px; right: 10px; background: var(--accent); color: #000; padding: 2px 10px; font-weight: bold; border-radius: 4px; font-size: 0.75em; z-index: 10; }
+        .card-content { padding: 20px; flex-grow: 1; display: flex; flex-direction: column; }
+        .card h3 { color: #fff; margin: 0 0 10px 0; font-size: 1.1em; }
+        .card p { font-size: 0.85em; color: #bdc3c7; margin: 0; line-height: 1.4; }
+        .label { color: var(--accent); font-size: 0.7em; text-transform: uppercase; font-weight: bold; display: block; margin-bottom: 5px; opacity: 0.8; }
+        
+        .footer-note { margin-top: 50px; padding: 30px; border-top: 1px solid #333; text-align: center; color: #d1d1d1; }
+        .footer-note a { color: var(--accent); text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h2 style="margin:0;">Гордость нашего города</h2>
+        <a href="index.html" class="back-btn">На главную</a>
+    </div>
+
+    <div class="container">
+        <div class="grid">
+            
+            <div class="card">
+                <div class="photo-box"><img src="saburov.jpg" alt="Нурлан Сабуров"></div>
+                <div class="card-content"><span class="label">Шоу-бизнес</span><h3>Нурлан Сабуров</h3><p>Комик и телеведущий.</p></div>
+            </div>
+            <div class="card">
+                <div class="photo-box"><img src="nurbek.jpg" alt="Нурбек Оралбай"></div>
+                <div class="card-content"><span class="label">Спорт</span><h3>Нурбек Оралбай</h3><p>Чемпион мира по боксу (2023).</p></div>
+            </div>
+            <div class="card">
+                <div class="photo-box"><img src="aibek.jpg" alt="Айбек Оралбай"></div>
+                <div class="card-content"><span class="label">Спорт</span><h3>Айбек Оралбай</h3><p>Чемпион Азии по боксу.</p></div>
+            </div>
+            <div class="card">
+                <div class="photo-box"><img src="telezhinskaya.jpg" alt="Наталья Тележинская"></div>
+                <div class="card-content"><span class="label">Краеведение</span><h3>Наталья Тележинская</h3><p>Исследователь истории региона.</p></div>
+            </div>
+            <div class="card">
+                <div class="photo-box"><img src="marat.jpg" alt="Марат Урстембаев"></div>
+                <div class="card-content"><span class="label">Культура</span><h3>Марат Урстембаев</h3><p>Директор музея, археолог.</p></div>
+            </div>
+
+            <div class="card">
+                <div class="photo-box"><span class="year-badge">2004</span><img src="aldangorov.jpg" alt="Алдангоров"></div>
+                <div class="card-content"><span class="label">Почетный гражданин</span><h3>Алдангоров Шамиш Закирович</h3><p>Ветеран и юрист.</p></div>
+            </div>
+            <div class="card">
+                <div class="photo-box"><span class="year-badge">2008</span><img src="asaubayev.jpg" alt="Асаубаев"></div>
+                <div class="card-content"><span class="label">Наука / Пром</span><h3>Асаубаев Канат Шайханович</h3><p>Профессор, глава АО «Казахалтын».</p></div>
+            </div>
+            <div class="card">
+                <div class="photo-box"><span class="year-badge">2011</span><img src="bulatova.jpg" alt="Булатова"></div>
+                <div class="card-content"><span class="label">Здравоохранение</span><h3>Булатова Капу Бактаевна</h3><p>Заслуженный деятель города.</p></div>
+            </div>
+            <div class="card">
+                <div class="photo-box"><span class="year-badge">2014</span><img src="gavrilyatov.jpg" alt="Гаврилятов"></div>
+                <div class="card-content"><span class="label">Общество</span><h3>Гаврилятов Василий Константинович</h3><p>Председатель Совета ветеранов.</p></div>
+            </div>
+            <div class="card">
+                <div class="photo-box"><span class="year-badge">1999</span><img src="grebneva.jpg" alt="Гребнева"></div>
+                <div class="card-content"><span class="label">Образование</span><h3>Гребнева Вера Николаевна</h3><p>Руководитель отдела образования.</p></div>
+            </div>
+            <div class="card">
+                <div class="photo-box"><span class="year-badge">Н/Д</span><img src="dorosh.jpg" alt="Дорош"></div>
+                <div class="card-content"><span class="label">Ветеран</span><h3>Дорош Клавдия Александровна</h3><p>Ветеран ВОВ.</p></div>
+            </div>
+            <div class="card">
+                <div class="photo-box"><span class="year-badge">2023</span><img src="eszhanova.jpg" alt="Есжанова"></div>
+                <div class="card-content"><span class="label">Социальная сфера</span><h3>Есжанова Фарида Буташевна</h3><p>Председатель совета ветеранов.</p></div>
+            </div>
+            <div class="card">
+                <div class="photo-box"><span class="year-badge">1994</span><img src="zernova.jpg" alt="Зернова"></div>
+                <div class="card-content"><span class="label">Медицина</span><h3>Зернова Александра Васильевна</h3><p>Врач-стоматолог.</p></div>
+            </div>
+            <div class="card">
+                <div class="photo-box"><span class="year-badge">2011</span><img src="zinger.jpg" alt="Зингер"></div>
+                <div class="card-content"><span class="label">Промышленность</span><h3>Зингер Виктор Иванович</h3><p>Ветеран труда ЦГХК.</p></div>
+            </div>
+            <div class="card">
+                <div class="photo-box"><span class="year-badge">2011</span><img src="kovtsur.jpg" alt="Ковцур"></div>
+                <div class="card-content"><span class="label">Культура</span><h3>Ковцур Иван Павлович</h3><p>Заслуженный деятель культуры.</p></div>
+            </div>
+            <div class="card">
+                <div class="photo-box"><span class="year-badge">Н/Д</span><img src="kopeeva.jpg" alt="Копеева"></div>
+                <div class="card-content"><span class="label">Госслужба</span><h3>Копеева Гульмира Омирзаковна</h3><p>Секретарь маслихата.</p></div>
+            </div>
+            <div class="card">
+                <div class="photo-box"><span class="year-badge">2004</span><img src="kotovich.jpg" alt="Котович"></div>
+                <div class="card-content"><span class="label">Общество</span><h3>Котович Валерий Николаевич</h3><p>Депутат Мажилиса РК.</p></div>
+            </div>
+            <div class="card">
+                <div class="photo-box"><span class="year-badge">2014</span><img src="makhatov.jpg" alt="Махатов"></div>
+                <div class="card-content"><span class="label">Медицина</span><h3>Махатов Канапия Кульмагамбетович</h3><p>Врач-травматолог.</p></div>
+            </div>
+            <div class="card">
+                <div class="photo-box"><span class="year-badge">Н/Д</span><img src="moldagaipov.jpg" alt="Молдагаипов"></div>
+                <div class="card-content"><span class="label">Правопорядок</span><h3>Молдагаипов Болатбек Амирбекович</h3><p>Ветеран ОВД.</p></div>
+            </div>
+            <div class="card">
+                <div class="photo-box"><span class="year-badge">Н/Д</span><img src="mukhamadiev.jpg" alt="Мухамадиев"></div>
+                <div class="card-content"><span class="label">Соцподдержка</span><h3>Мухамадиев Сапар Файзрахманович</h3><p>Руководитель ОО «Ерлик».</p></div>
+            </div>
+            <div class="card">
+                <div class="photo-box"><span class="year-badge">Н/Д</span><img src="mushanov.jpg" alt="Мушанов"></div>
+                <div class="card-content"><span class="label">Строительство</span><h3>Мушанов Сарсембай Камалиденович</h3><p>Почетный строитель.</p></div>
+            </div>
+            <div class="card">
+                <div class="photo-box"><span class="year-badge">2008</span><img src="nekrasova.jpg" alt="Некрасова"></div>
+                <div class="card-content"><span class="label">Образование</span><h3>Некрасова Ирина Сергеевна</h3><p>Заслуженный педагог.</p></div>
+            </div>
+            <div class="card">
+                <div class="photo-box"><span class="year-badge">2024</span><img src="omarov.jpg" alt="Омаров"></div>
+                <div class="card-content"><span class="label">АПК</span><h3>Омаров Жанбай Жумажанович</h3><p>Глава хозяйства «Береке».</p></div>
+            </div>
+            <div class="card">
+                <div class="photo-box"><span class="year-badge">2008</span><img src="pirmatov.jpg" alt="Пирматов"></div>
+                <div class="card-content"><span class="label">Экономика</span><h3>Пирматов Эшмурат Азимович</h3><p>Общественный деятель.</p></div>
+            </div>
+            <div class="card">
+                <div class="photo-box"><span class="year-badge">2011</span><img src="rukavtsova.jpg" alt="Рукавцова"></div>
+                <div class="card-content"><span class="label">Общество</span><h3>Рукавцова Нэлли Ильинична</h3><p>Депутат маслихата.</p></div>
+            </div>
+            
+            <div class="card">
+                <div class="photo-box"><span class="year-badge">Н/Д</span><div class="no-photo">Отсутствует<br>Фотография</div></div>
+                <div class="card-content"><span class="label">Ветеран труда</span><h3>Сабит Куаныш Жумабаевич</h3><p>Ветеран региона.</p></div>
+            </div>
+
+            <div class="card">
+                <div class="photo-box"><span class="year-badge">Н/Д</span><img src="sabyrov.jpg" alt="Сабыров"></div>
+                <div class="card-content"><span class="label">Общество</span><h3>Сабыров Сапар Сабырович</h3><p>Председатель Совета ветеранов Аксу.</p></div>
+            </div>
+            <div class="card">
+                <div class="photo-box"><span class="year-badge">Н/Д</span><img src="sagadiyev.jpg" alt="Сагадиев"></div>
+                <div class="card-content"><span class="label">Транспорт</span><h3>Сагадиев Болат Макежанович</h3><p>Директор автотранспорта.</p></div>
+            </div>
+            <div class="card">
+                <div class="photo-box"><span class="year-badge">Н/Д</span><img src="sagiev.jpg" alt="Сагиев"></div>
+                <div class="card-content"><span class="label">Производство</span><h3>Сагиев Токтамыс Сералиевич</h3><p>Ветеран производства.</p></div>
+            </div>
+            <div class="card">
+                <div class="photo-box"><span class="year-badge">Н/Д</span><img src="smagin.jpg" alt="Смагин"></div>
+                <div class="card-content"><span class="label">Самоуправление</span><h3>Смагин Алексей Петрович</h3><p>Деятель маслихата.</p></div>
+            </div>
+            <div class="card">
+                <div class="photo-box"><span class="year-badge">Н/Д</span><img src="smirnov.jpg" alt="Смирнов"></div>
+                <div class="card-content"><span class="label">Основатель</span><h3>Смирнов Сергей Артемович</h3><p>Первый директор комбината.</p></div>
+            </div>
+            <div class="card">
+                <div class="photo-box"><span class="year-badge">2004</span><img src="smirnova.jpg" alt="Смирнова"></div>
+                <div class="card-content"><span class="label">Ветеран</span><h3>Смирнова Мария Степановна</h3><p>Ветеран войны и труда.</p></div>
+            </div>
+            <div class="card">
+                <div class="photo-box"><span class="year-badge">Н/Д</span><img src="tomilov.jpg" alt="Томилов"></div>
+                <div class="card-content"><span class="label">Энергетика</span><h3>Томилов Анатолий Иванович</h3><p>Руководитель ТЭЦ.</p></div>
+            </div>
+            <div class="card">
+                <div class="photo-box"><span class="year-badge">Н/Д</span><img src="tuzov.jpg" alt="Тузов"></div>
+                <div class="card-content"><span class="label">Строительство</span><h3>Тузов Владимир Иванович</h3><p>Руководитель СУС.</p></div>
+            </div>
+            <div class="card">
+                <div class="photo-box"><span class="year-badge">Н/Д</span><img src="uteuova.jpg" alt="Утеуова"></div>
+                <div class="card-content"><span class="label">Общество</span><h3>Утеуова Менуара Мухамедкаликызы</h3><p>Активист ветеранов.</p></div>
+            </div>
+            <div class="card">
+                <div class="photo-box"><span class="year-badge">2008</span><img src="shevchenko.jpg" alt="Шевченко"></div>
+                <div class="card-content"><span class="label">Промышленность</span><h3>Шевченко Сергей П.</h3><p>Промышленный деятель.</p></div>
+            </div>
+            <div class="card">
+                <div class="photo-box"><span class="year-badge">1999</span><img src="ezau.jpg" alt="Эзау"></div>
+                <div class="card-content"><span class="label">Управление</span><h3>Эзау Виктор Абрамович</h3><p>Заводской руководитель.</p></div>
+            </div>
+
+            <div class="card">
+                <div class="photo-box"><span class="year-badge">Н/Д</span><div class="no-photo">Отсутствует<br>Фотография</div></div>
+                <div class="card-content"><span class="label">Ветеран</span><h3>Койшибаев Марат</h3><p>Почетный гражданин.</p></div>
+            </div>
+
+            <div class="card">
+                <div class="photo-box"><span class="year-badge">Н/Д</span><div class="no-photo">Отсутствует<br>Фотография</div></div>
+                <div class="card-content"><span class="label">Ветеран ВОВ</span><h3>Посохова Любовь Николаевна</h3><p>Заслуженный житель.</p></div>
+            </div>
+
+        </div>
+        <div class="footer-note">
+            <p>Подробнее про всех выдающихся земляков можно узнать в <strong>Городской Библиотеке Степногорска</strong> или на сайте: <br>
+            <a href="https://www.calameo.com/books/002008663eec7d5f2e331" target="_blank">Биобиблиографический указатель (Calameo)</a></p>
+            <p style="font-size: 0.85em; opacity: 0.7;">* Если ссылка не работает, попробуйте найти книгу на сайте <strong>Calameo</strong> вручную по запросу: <br>
+            "Наши славные земляки / о почетных гражданах города Степногорска"</p>
+        </div>
+    </div>
+</body>
+</html>

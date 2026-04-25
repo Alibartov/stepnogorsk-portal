@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Промышленность | Степногорск</title>
+    
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <style>
+        :root { --accent: #f39c12; --bg: #121212; --card-bg: #1e1e1e; --text: #d1d1d1; }
+        body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', sans-serif; margin: 0; line-height: 1.6; }
+        .header { background: #1f1f1f; padding: 20px; border-bottom: 3px solid var(--accent); display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+        .back-btn { color: var(--accent); text-decoration: none; font-weight: bold; text-transform: uppercase; border: 1px solid var(--accent); padding: 8px 15px; border-radius: 4px; transition: 0.3s; }
+        .back-btn:hover { background: var(--accent); color: #000; }
+        .container { max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+        h2 { color: var(--accent); text-transform: uppercase; margin: 40px 0 20px 0; border-left: 5px solid var(--accent); padding-left: 15px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 25px; }
+        .card { background: var(--card-bg); border-radius: 12px; border: 1px solid #333; overflow: hidden; display: flex; flex-direction: column; transition: 0.3s; height: 100%; }
+        .card:hover { border-color: var(--accent); transform: translateY(-5px); }
+        
+        .photo-box { width: 100%; height: 230px; background: #252525; overflow: hidden; border-bottom: 1px solid #333; position: relative; display: flex; align-items: center; justify-content: center; text-align: center; }
+        .photo-box img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; }
+        
+        /* Стиль для отсутствующего фото */
+        .no-photo { color: #555; font-size: 0.9em; font-weight: bold; text-transform: uppercase; padding: 20px; }
+
+        .card-content { padding: 20px; flex-grow: 1; display: flex; flex-direction: column; }
+        .card h3 { color: #fff; margin: 0 0 10px 0; font-size: 1.3em; }
+        .card p { font-size: 0.9em; color: #bdc3c7; margin: 0; line-height: 1.5; }
+        .label { color: var(--accent); font-size: 0.75em; text-transform: uppercase; font-weight: bold; display: block; margin-bottom: 8px; opacity: 0.8; }
+        
+        .footer-note { margin-top: 50px; padding: 30px; border-top: 1px solid #333; text-align: center; color: #d1d1d1; }
+        .footer-note a { color: var(--accent); text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h2 style="margin:0;">Индустриальный Степногорск</h2>
+        <a href="index.html" class="back-btn">На главную</a>
+    </div>
+
+    <div class="container">
+        <h2>Промышленность и производство</h2>
+        <div class="grid">
+            
+            <div class="card">
+                <div class="photo-box"><img src="sghk.jpg" alt="СГХК"></div>
+                <div class="card-content">
+                    <span class="label">Горная химия</span>
+                    <h3>Степногорский горно-химический комбинат (СГХК)</h3>
+                    <p>Легендарное градообразующее предприятие. Специализируется на переработке урана и производстве молибденового концентрата.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="photo-box"><img src="epk.jpg" alt="ЕПК-Степногорск"></div>
+                <div class="card-content">
+                    <span class="label">Машиностроение</span>
+                    <h3>АО «ЕПК Степногорск»</h3>
+                    <p>Лидер в СНГ по выпуску подшипников для железнодорожного транспорта.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="photo-box"><div class="no-photo">Фотография<br>отсутствует</div></div>
+                <div class="card-content">
+                    <span class="label">Агропромышленность</span>
+                    <h3>Завод «Прогресс-Агро»</h3>
+                    <p>Комплекс по производству муки и комбикормов, обеспечивающий продовольственную безопасность региона.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="photo-box"><img src="tec.jpg" alt="ТЭЦ"></div>
+                <div class="card-content">
+                    <span class="label">Энергетика</span>
+                    <h3>Степногорская ТЭЦ</h3>
+                    <p>Энергетическое «сердце» города, снабжающее теплом и светом жилые дома и заводы.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="photo-box"><img src="greenhouse.jpg" alt="Степногорские теплицы"></div>
+                <div class="card-content">
+                    <span class="label">Сельское хозяйство</span>
+                    <h3>Степногорские теплицы</h3>
+                    <p>Современный тепличный комплекс по выращиванию овощей круглый год.</p>
+                </div>
+            </div>
+
+    </div>
+</body>
+</html>

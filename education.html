@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Образование | Степногорск</title>
+    <style>
+        :root { --accent: #f39c12; --bg: #121212; --card-bg: #1e1e1e; --text: #d1d1d1; }
+        body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', sans-serif; margin: 0; line-height: 1.6; }
+        
+        .header { background: #1f1f1f; padding: 20px; border-bottom: 3px solid var(--accent); display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+        .back-btn { color: var(--accent); text-decoration: none; font-weight: bold; text-transform: uppercase; border: 1px solid var(--accent); padding: 8px 15px; border-radius: 4px; transition: 0.3s; }
+        .back-btn:hover { background: var(--accent); color: #000; }
+
+        .container { max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+        h2 { color: var(--accent); text-transform: uppercase; margin: 40px 0 20px 0; border-left: 5px solid var(--accent); padding-left: 15px; }
+        
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 30px; }
+        
+        .card { background: var(--card-bg); border-radius: 12px; border: 1px solid #333; overflow: hidden; display: flex; flex-direction: column; transition: 0.3s; }
+        .card:hover { border-color: var(--accent); transform: translateY(-5px); }
+        
+        .photo-placeholder { width: 100%; height: 220px; background: #252525; border-bottom: 1px solid #333; overflow: hidden; }
+        .photo-placeholder img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s; }
+        .card:hover .photo-placeholder img { transform: scale(1.05); }
+
+        .card-content { padding: 25px; flex-grow: 1; }
+        .card h3 { color: var(--accent); margin: 0 0 10px 0; font-size: 1.3em; }
+        .section-label { color: var(--accent); font-size: 0.85em; text-transform: uppercase; font-weight: bold; margin-top: 15px; display: block; }
+        .info-text { font-size: 0.95em; color: #bdc3c7; margin-bottom: 10px; }
+        .spec-list { padding-left: 20px; margin: 5px 0; color: #bdc3c7; font-size: 0.9em; list-style-type: square; }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h2 style="margin:0;">Образование и Спорт</h2>
+        <a href="index.html" class="back-btn">На главную</a>
+    </div>
+
+    <div class="container">
+
+        <h2>Профессиональное образование</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="photo-placeholder"><img src="gtk.jpg" alt="ГТК"></div>
+                <div class="card-content">
+                    <h3>Горнотехнический колледж (ГТК)</h3>
+                    <span class="section-label">Биография:</span>
+                    <p class="info-text">Основан в 1968 году для подготовки специалистов горнодобывающей промышленности. Является ключевым партнером крупнейших предприятий города.</p>
+                    <span class="section-label">Специальности:</span>
+                    <ul class="spec-list">
+                        <li>Открытая разработка месторождений</li>
+                        <li>Ремонт горного оборудования</li>
+                        <li>Сварочное дело</li>
+                        <li>Электрооборудование предприятий</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="photo-placeholder"><img src="vks.jpg" alt="ВКС"></div>
+                <div class="card-content">
+                    <h3>Высший колледж Степногорска (ВКС)</h3>
+                    <span class="section-label">Биография:</span>
+                    <p class="info-text">Открыт в 1970 году. За свою историю стал ведущим центром подготовки IT-специалистов и педагогов в регионе.</p>
+                    <span class="section-label">Специальности:</span>
+                    <ul class="spec-list">
+                        <li>ПО (Вычислительная техника)</li>
+                        <li>Начальное образование</li>
+                        <li>Дошкольное воспитание</li>
+                        <li>Автоматизация и управление</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="photo-placeholder"><img src="maksat.jpg" alt="Максат"></div>
+                <div class="card-content">
+                    <h3>Колледж «Максат»</h3>
+                    <span class="section-label">Биография:</span>
+                    <p class="info-text">Многопрофильное учебное заведение, ориентированное на современные требования рынка труда и практическую подготовку кадров.</p>
+                    <span class="section-label">Специальности:</span>
+                    <ul class="spec-list">
+                        <li>Защита в чрезвычайных ситуациях</li>
+                        <li>Учитель начальных классов</li>
+                        <li>Обогащение полезных ископаемых</li>
+                        <li>Электромонтажные работы</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <h2>Спортивные учреждения</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="photo-placeholder"><img src="shior.jpg" alt="СШИОР"></div>
+                <div class="card-content">
+                    <h3>СШИОР</h3>
+                    <p class="info-text">Областная спортивная школа-интернат олимпийского резерва. Уникальное заведение для подготовки профессиональных спортсменов.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="photo-placeholder"><img src="batyr.jpg" alt="ДЮСШ Батыр"></div>
+                <div class="card-content">
+                    <h3>ДЮСШ «Батыр»</h3>
+                    <p class="info-text">Специализированная детско-юношеская школа единоборств, воспитавшая множество чемпионов.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="photo-placeholder"><img src="tarlan.jpg" alt="СК Тарлан"></div>
+                <div class="card-content">
+                    <h3>Спортивный Комплекс «Тарлан»</h3>
+                    <p class="info-text">Современная тренировочная база с профессиональными залами для бокса и борьбы.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="photo-placeholder"><img src="dush.jpg" alt="ДЮСШ"></div>
+                <div class="card-content">
+                    <h3>ДЮСШ</h3>
+                    <p class="info-text">Городская детско-юношеская спортивная школа для массового детского спорта.</p>
+                </div>
+            </div>
+        </div>
+
+        <h2>Дополнительное образование</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="photo-placeholder"><img src="art_school.jpg" alt="Художественная школа"></div>
+                <div class="card-content">
+                    <h3>Художественная школа</h3>
+                    <p class="info-text">Центр эстетического развития, обучающий детей основам живописи, академического рисунка и искусства.</p>
+                </div>
+            </div>
+        </div>
+
+        <h2>Средние школы (№1 — №9)</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="photo-placeholder"><img src="school1.jpg" alt="Школа №1"></div>
+                <div class="card-content"><h3>Средняя школа №1</h3><p class="info-text">Первая школа города, открытая в 1964 году.</p></div>
+            </div>
+            <div class="card">
+                <div class="photo-placeholder"><img src="school2.jpg" alt="Школа №2"></div>
+                <div class="card-content"><h3>Средняя школа №2</h3><p class="info-text">Основана в 1966 году.</p></div>
+            </div>
+            <div class="card">
+                <div class="photo-placeholder"><img src="school3.jpg" alt="Школа №3"></div>
+                <div class="card-content"><h3>Средняя школа №3</h3><p class="info-text">Год основания: 1967.</p></div>
+            </div>
+            <div class="card">
+                <div class="photo-placeholder"><img src="school4.jpg" alt="Школа №4"></div>
+                <div class="card-content"><h3>Школа-гимназия №4</h3><p class="info-text">Год основания: 1969.</p></div>
+            </div>
+            <div class="card">
+                <div class="photo-placeholder"><img src="school5.jpg" alt="Школа №5"></div>
+                <div class="card-content"><h3>Средняя школа №5</h3><p class="info-text">Год основания: 1971.</p></div>
+            </div>
+            <div class="card">
+                <div class="photo-placeholder"><img src="school6.jpg" alt="Школа №6"></div>
+                <div class="card-content"><h3>Школа-лицей №6</h3><p class="info-text">Год основания: 1974.</p></div>
+            </div>
+            <div class="card">
+                <div class="photo-placeholder"><img src="school7.jpg" alt="Школа №7"></div>
+                <div class="card-content"><h3>Средняя школа №7</h3><p class="info-text">Год основания: 1976.</p></div>
+            </div>
+            <div class="card">
+                <div class="photo-placeholder"><img src="school8.jpg" alt="Школа №8"></div>
+                <div class="card-content"><h3>Средняя школа №8</h3><p class="info-text">Год основания: 1979.</p></div>
+            </div>
+            <div class="card">
+                <div class="photo-placeholder"><img src="school9.jpg" alt="Школа №9"></div>
+                <div class="card-content"><h3>Средняя школа №9</h3><p class="info-text">Год основания: 1985.</p></div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

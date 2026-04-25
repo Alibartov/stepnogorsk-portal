@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интересные факты | Степногорск</title>
+    <style>
+        :root { --accent: #27ae60; --bg: #0f0f0f; --card-bg: #1a1a1a; --text: #ececec; }
+        body { background: var(--bg); color: var(--text); font-family: 'Verdana', sans-serif; margin: 0; line-height: 1.7; }
+        
+        .header { background: #1a1a1a; padding: 30px 5%; border-bottom: 3px solid var(--accent); display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+        .back-btn { color: var(--accent); text-decoration: none; border: 1px solid var(--accent); padding: 10px 25px; border-radius: 5px; font-weight: bold; transition: 0.3s; }
+        .back-btn:hover { background: var(--accent); color: #fff; }
+
+        .container { max-width: 1000px; margin: 50px auto; padding: 0 20px; }
+        
+        h1.main-title { text-align: center; color: var(--accent); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 50px; font-size: 2.2em; }
+
+        .fact-card { background: var(--card-bg); border-radius: 12px; padding: 30px; margin-bottom: 30px; border-left: 5px solid var(--accent); display: flex; align-items: center; gap: 30px; transition: 0.3s; box-shadow: 0 5px 15px rgba(0,0,0,0.4); }
+        .fact-card:hover { transform: translateX(10px); border-left-color: #fff; box-shadow: 0 10px 25px rgba(0,0,0,0.6); }
+        
+        .fact-number { font-size: 4em; font-weight: bold; color: var(--accent); min-width: 80px; text-align: center; line-height: 1; opacity: 0.8; }
+        .fact-content { flex-grow: 1; }
+        .fact-content h2 { margin: 0 0 10px 0; font-size: 1.5em; color: #fff; text-transform: uppercase; }
+        .fact-content p { margin: 0; color: #d1d1d1; font-size: 1.05em; text-align: justify; }
+
+        @media (max-width: 768px) {
+            .fact-card { flex-direction: column; align-items: flex-start; text-align: left; gap: 15px; }
+            .fact-number { font-size: 3em; text-align: left; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h2 style="margin:0; color: #fff;">ФАКТЫ О ГОРОДЕ</h2>
+        <a href="index.html" class="back-btn">← НА ГЛАВНУЮ</a>
+    </div>
+
+    <div class="container">
+        <h1 class="main-title">Знаете ли вы, что...</h1>
+
+        <div class="fact-card">
+            <div class="fact-number">01</div>
+            <div class="fact-content">
+                <h2>Секретный Целиноград-25</h2>
+                <p>Долгое время Степногорск не отмечался на общедоступных географических картах. Из-за стратегического значения горно-химического комбината город носил статус закрытого и имел кодовые названия, самые известные из которых — Целиноград-25 и Макинск-2.</p>
+            </div>
+        </div>
+
+        <div class="fact-card">
+            <div class="fact-number">02</div>
+            <div class="fact-content">
+                <h2>Город без светофоров</h2>
+                <p>Изначально город проектировался по передовым советским градостроительным концепциям. Долгое время в Степногорске не было ни одного светофора, так как транспортные потоки и пешеходные зоны были разведены максимально безопасно и продумано.</p>
+            </div>
+        </div>
+
+        <div class="fact-card">
+            <div class="fact-number">03</div>
+            <div class="fact-content">
+                <h2>Авиасообщение в степи</h2>
+                <p>Несмотря на свой закрытый статус, город стремительно развивал собственную инфраструктуру. Уже в 1963 году открылась служба аэропорта, связавшая секретный населенный пункт с внешним миром воздушными путями.</p>
+            </div>
+        </div>
+
+        <div class="fact-card">
+            <div class="fact-number">04</div>
+            <div class="fact-content">
+                <h2>Спортивная столица региона</h2>
+                <p>В 1973 году открыты стадион «Химик» и Дворец спорта. Событие было настолько масштабным для региона, что на открытие стадиона была специально приглашена сборная ветеранов СССР по футболу.</p>
+            </div>
+        </div>
+
+        <div class="fact-card">
+            <div class="fact-number">05</div>
+            <div class="fact-content">
+                <h2>Наукоград и Биотехнологии</h2>
+                <p>Степногорск славился не только горной химией, но и передовой биологической наукой. 1 сентября 1994 года состоялось открытие медико-биологического института, закрепившего за городом статус важнейшего наукограда.</p>
+            </div>
+        </div>
+
+        <div class="fact-card">
+            <div class="fact-number">06</div>
+            <div class="fact-content">
+                <h2>Звездные гастроли</h2>
+                <p>Закрытый город регулярно принимал звезд первой величины. Летом 1988 года на гастролях побывал И. Кобзон. В 1995 году состоялся концерт Филиппа Киркорова, а 2 июля того же года прошел масштабный концерт группы «А-Студио» на стадионе «Химик».</p>
+            </div>
+        </div>
+
+        <div class="fact-card">
+            <div class="fact-number">07</div>
+            <div class="fact-content">
+                <h2>Олимпийская слава</h2>
+                <p>Степногорская земля подарила миру выдающихся атлетов. В 1988 году волейболистка О. Кривошеева стала чемпионкой Олимпийских игр, а в августе 2008 года на Олимпиаде в Пекине спортсменка из Степногорска Ирина Некрасова завоевала серебро по тяжелой атлетике.</p>
+            </div>
+        </div>
+
+        <div class="fact-card">
+            <div class="fact-number">08</div>
+            <div class="fact-content">
+                <h2>Хранители степной истории</h2>
+                <p>Земля Сарыарки вокруг города таит в себе богатейшее археологическое наследие. Раскопки Шондыркоразовского кургана и других древних памятников позволили открыть уникальные тайны степи. Огромный вклад в изучение этих мест внес легендарный тандем ученых — Кемаль Акишев и Марат Урстембаев.</p>
+            </div>
+        </div>
+
+        <div class="fact-card">
+            <div class="fact-number">09</div>
+            <div class="fact-content">
+                <h2>Восстановление летописи</h2>
+                <p>Историческая хронология и архивные фонды местного историко-краеведческого музея были детально реконструированы благодаря скрупулезному труду краеведов и таких преданных своему делу специалистов, как Надежда Дмитриевна Лысцова. Это позволило сохранить подлинную историю первостроителей для будущих поколений.</p>
+            </div>
+        </div>
+
+        <div class="fact-card">
+            <div class="fact-number">10</div>
+            <div class="fact-content">
+                <h2>Визит Главы государства</h2>
+                <p>Одним из важнейших политических событий в новейшей истории города стал приезд первого лица страны. 16 сентября 1992 года Степногорск посетил Президент РК Н. Назарбаев, определив векторы дальнейшего развития региона в условиях независимости.</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
